@@ -1,3 +1,15 @@
+내 포트폴리오 만들 거임
+
+1.서버 먼저 설정 다 끝낸다.
+
+2.리액트로 랜딩페이지를 만든다.
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
