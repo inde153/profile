@@ -2,12 +2,13 @@ import express from 'express'
 import cors from 'cors'
 import cookieParser from 'cookie-parser';
 import session from 'express-session'
-
-require("dotenv").config();
-
-// const indexRouter = require("./routes");
+import v1Router from './routes/user'
+import db from '../server_mongo/db'
 
 const app = express();
+db()
+
+
 
 // 세션 설정
 // const sessionMiddleware = session({
@@ -37,6 +38,7 @@ app.set("port", process.env.PORT || 4000);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+app.use('/v1',v1Router)
 // request의 쿠키를 해석해주는 미들웨어
 // app.use(cookieParser(process.env.COOKIE_SECRET));
 // app.use(sessionMiddleware);
