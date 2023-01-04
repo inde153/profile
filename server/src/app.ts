@@ -1,14 +1,12 @@
-import express from 'express'
-import cors from 'cors'
-import cookieParser from 'cookie-parser';
-import session from 'express-session'
-import v1Router from './routes/user'
-import db from '../server_mongo/db'
+import express from "express";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import session from "express-session";
+import v1Router from "./routes/user";
+import db from "../server_mongo/db";
 
 const app = express();
-db()
-
-
+db();
 
 // 세션 설정
 // const sessionMiddleware = session({
@@ -37,10 +35,10 @@ app.set("port", process.env.PORT || 4000);
 // request의 본문을 분석해주는 미들웨어
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
 
-app.use('/v1',v1Router)
+app.use("/v1", v1Router);
 // request의 쿠키를 해석해주는 미들웨어
-// app.use(cookieParser(process.env.COOKIE_SECRET));
 // app.use(sessionMiddleware);
 
 // index 라우터
