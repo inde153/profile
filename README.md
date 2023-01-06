@@ -4,11 +4,7 @@
 
 2.리액트로 랜딩페이지를 만든다.
 
-
-
-
-
-
+현재 -> 테마 적용 중
 
 # Getting Started with Create React App
 
