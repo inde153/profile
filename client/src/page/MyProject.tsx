@@ -5,12 +5,8 @@ const Container = styled.div`
   background-color: black;
 `;
 
-const RandingPage = () => {
-  return (
-    <>
-      <Container></Container>
-    </>
-  );
+const MyProject = () => {
+  return <>myPage</>;
 };
 
-export default RandingPage;
+export default MyProject;
