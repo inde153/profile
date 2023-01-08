@@ -9,7 +9,17 @@ const ContainerBox = styled.div`
 `;
 
 const HeaderContents = styled.div`
-  //
+  text-align: right;
+`;
+
+const HeaderUl = styled.ul`
+  margin-top: 0px;
+`;
+
+const HeaderLi = styled.li`
+  display: inline-block;
+  font-size: 20px;
+  margin: 20px 50px;
 `;
 
 const HeaderLogo = styled.img`
@@ -19,19 +29,16 @@ const HeaderLogo = styled.img`
 const Header = () => {
   return (
     <ContainerBox>
-      <HeaderContents>header</HeaderContents>
-      {/* <HeaderContents>
-        <ul>
-          <li>
-            <a>
-              hello<HeaderLogo src={logo}></HeaderLogo>
-            </a>
-          </li>
-          <li>
-            <a>hello</a>
-          </li>
-        </ul>
-      </HeaderContents> */}
+      <HeaderContents>
+        <HeaderUl>
+          <HeaderLi>Home</HeaderLi>
+          <HeaderLi>About</HeaderLi>
+          <HeaderLi>Service</HeaderLi>
+          <HeaderLi>Portfolio</HeaderLi>
+          <HeaderLi>Blog</HeaderLi>
+          <HeaderLi>GitHub</HeaderLi>
+        </HeaderUl>
+      </HeaderContents>
     </ContainerBox>
   );
 };
