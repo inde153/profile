@@ -6,7 +6,7 @@ const Container = styled.div`
 `;
 
 const MyProject = () => {
-  return <>myPage</>;
+  return <>Project</>;
 };
 
 export default MyProject;
