@@ -3,9 +3,12 @@ import React, { useState } from "react";
 const logo = require("../assets/images/githubIcon.png");
 
 const ContainerBox = styled.div`
-  background-color: blue;
+  // background-color: blue;
   height: 100px;
   color: white;
+  border-style: solid;
+  border-color: black black gray black;
+  border-radius: 20px 20px 20px 20px;
 `;
 
 const HeaderContents = styled.div`

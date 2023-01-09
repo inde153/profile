@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 
 const ContainerBox = styled.div`
-  background-color: orange;
+  // background-color: orange;
   height: 100px;
   color: white;
 `;
