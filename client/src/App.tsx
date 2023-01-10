@@ -9,7 +9,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 const AppContainerBox = styled.div`
-  background-color: black;
+  background-color: rgba(255, 255, 255);
 `;
 
 const ContainerBox = styled.div`
@@ -24,19 +24,14 @@ const App = () => {
     <AppContainerBox>
       <ContainerBox>
         <ThemeProvider theme={isDark ? darkTheme : lightTheme}>
-          <Header></Header>
           <BrowserRouter>
+            <Header></Header>
             <Routes>
               <Route path="/" element={<RandingPage />} />
-              <Route path="/Home" element={<MyProject />} />
-              <Route path="/About" element={<MyProject />} />
-              <Route path="/Service" element={<MyProject />} />
-              <Route path="/Portfolio" element={<MyProject />} />
-              <Route path="/Blog" element={<MyProject />} />
-              <Route path="/GitHub" element={<MyProject />} />
+              <Route path="/home" element={<MyProject />} />
             </Routes>
+            <Footer></Footer>
           </BrowserRouter>
-          <Footer></Footer>
         </ThemeProvider>
       </ContainerBox>
     </AppContainerBox>
