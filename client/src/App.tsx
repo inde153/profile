@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import React, { Component } from "react";
 import { useState } from "react";
 import { darkTheme, lightTheme } from "./styles/theme";
-import RandingPage from "./page/RandingPage";
+import Randing from "./page/Randing";
+import About from "./page/Randing";
 import MyProject from "./page/MyProject";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -27,8 +28,8 @@ const App = () => {
           <BrowserRouter>
             <Header></Header>
             <Routes>
-              <Route path="/" element={<RandingPage />} />
-              <Route path="/home" element={<MyProject />} />
+              <Route path="/" element={<Randing />} />
+              <Route path="/about" element={<About />} />
             </Routes>
             <Footer></Footer>
           </BrowserRouter>
