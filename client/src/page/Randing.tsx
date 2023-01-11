@@ -28,6 +28,11 @@ const SectionImage = styled.img`
   width: 90%;
   height: 90%;
   margin: 1px;
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 `;
 
 const RandingPage = () => {
